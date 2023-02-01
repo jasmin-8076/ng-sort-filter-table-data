@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Student,dataset} from './data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-table-sort-and-filter';
+ Studentdata: Array<Student> = dataset;
 }
