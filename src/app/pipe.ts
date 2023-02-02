@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Student} from './data';
 
 @Pipe({ name: 'students' })
-export class CountryPipe implements PipeTransform {
+export class StudentPipe implements PipeTransform {
   transform(values: Student[], filter: string): Student[] {
     if (!filter || filter.length === 0) {
       return values;
